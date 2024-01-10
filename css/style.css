@@ -696,6 +696,11 @@
 			font-size: 1.25em;
 		}
 	
+@media (max-width: 767px) {
+            #nav {
+                display: none;
+            }
+        }
 	#nav {
 		position: absolute;
 		right: 0.5em;
@@ -934,8 +939,8 @@
 	
 	#footer {
 		position: relative;
-		height: 5em;
-		line-height: 5em;
+		height: 3em;
+		line-height: 3em;
 		margin: 0;
 		background: #39454b;
 		color: #999;

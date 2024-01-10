@@ -12,6 +12,17 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+
+/* hide elements from mobile;*/
+@media (max-width: 767px) {
+            #nav {
+                display: none;
+            }
+	    .button.style2.down.anchored {
+                display: none;
+            }
+        }
+
 	body {
 		background: #fff;
 	}
@@ -695,12 +706,7 @@
 		#logo a {
 			font-size: 1.25em;
 		}
-	
-@media (max-width: 767px) {
-            #nav {
-                display: none;
-            }
-        }
+
 	#nav {
 		position: absolute;
 		right: 0.5em;

@@ -8,74 +8,6 @@
 -->
 <html>
 	<head>
-<script>
-var digitsOnly = /[1234567890]/g;
-var floatOnly = /[0-9\.]/g;
-var alphaOnly = /[A-Za-z ]/g;
-var webOnly = /[\_\-0-9\:\/\.A-Za-z]/g;
-function restrictCharacters(myfield, e, restrictionType) {
-	if (!e) var e = window.event
-	if (e.keyCode) code = e.keyCode;
-	else if (e.which) code = e.which;
-	var character = String.fromCharCode(code);
-	// if they pressed esc... remove focus from field...
-	if (code==27) { this.blur(); return false; }
-	// ignore if they are press other keys
-	// strange because code: 39 is the down key AND ' key...
-	// and DEL also equals .
-	if (!e.ctrlKey && code!=9 && code!=8 && code!=36 && code!=37 && code!=38 && (code!=39 || (code==39 && character=="'")) && code!=40) {
-		if (character.match(restrictionType)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-}
-
-function validateForm() {
-    var nome = document.forms["myForm"]["nome"].value;
-    var cognome = document.forms["myForm"]["cognome"].value;
-    var azienda = document.forms["myForm"]["azienda"].value;
-    var email = document.forms["myForm"]["email"].value;
-    var nome = nome.replace(/^\s+|\s+$/gm,'');
-    var cognome = cognome.replace(/^\s+|\s+$/gm,'');
-    var azienda = azienda.replace(/^\s+|\s+$/gm,'');
-    var email = email.replace(/^\s+|\s+$/gm,'');
-    if (nome==null || nome=="") {
-        alert("Campo Nome obbligatorio");
-        return false;
-    }
-    if (cognome==null || cognome=="") {
-        alert("Campo Cognome obbligatorio");
-        return false;
-    }
-    if (azienda==null || azienda=="") {
-        alert("Campo azienda obbligatorio");
-        return false;
-    }
-    if (email==null || email=="") {
-        alert("Campo email obbligatorio");
-        return false;
-    }
-    var atpos = email.indexOf("@");
-    var dotpos = email.lastIndexOf(".");
-    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address");
-        return false;
-    }
-}
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-60330221-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
 
 		<title>Statistica  per il Business</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -108,28 +40,17 @@ function validateForm() {
 				<a href=""><img src="images/loghidef/galileo.png" alt="" align="left" width="auto" height="100%"></a>
 				<a href="https://www.stat.unipd.it/"><img src="images/loghidef/scienzestatistiche.gif" alt="" align="left" width="auto" height="100%"></a>
 				<a href="https://www.unipd.it/"><img src="images/loghidef/unipd.png" alt="" align="left" width="auto" height="100%"></a>
-	<!--
-<h1 id="logo"><img src="images/loghidef/unite.png" alt="" align="left" usemap="#Map" />
-<map name="Map" id="Map">
-    <area alt="SUS" title="SUS" href="http://sus.stat.unipd.it/" target="_blank" shape="rect" coords="0,0,55,48" />
-    <area alt="Universit&agrave; degli Studi di Padova" title="Universit&agrave; degli Studi di Padova" href="http://www.unipd.it" target="_blank" shape="rect" coords="289,0,397,48" />
-</map>
-	-->
 </h1>
 
                        <!-- Nav -->
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html#intro">Home</a></li>
+						<!--						<li><a href="index.html#intro">Home</a></li> -->
 						<li><a href="index.html#two">Programma</a></li>
 						<li><a href="index.html#work">Dove</a></li>
 						<li><a href="index.html#one">Informazioni</a></li>
-				<!--		<li><a href="#iscrizione">Iscrizione</a></li>  -->
 				<!--			<li><a href="index.html#sponsor">Sponsor</a></li> -->
 						<li><a href="index.html#organiz">Organizzazione</a></li>
-<!--                                                <li><a href="http://sus.stat.unipd.it" target="_blank" style="color: blue">SUS</a></li>
--->
-						<!--li><a href="#lista">Lista dei partecipanti</a></li-->
 					</ul>
 				</nav>
 		</header height='100%'>
@@ -142,17 +63,6 @@ function validateForm() {
 Padova - Palazzo del Bo - Aula Magna <br>
 Una giornata di convegno, per mettere in relazione gli statistici che svolgono la loro attivit&agrave;<br> nel mondo industriale, dei servizi, del 
 marketing e delle aziende<br>
-<!--
-<br>
- <b><a href="stampa.html", target="_blank">Rassegna stampa</a> </b>
-<br>
-&Egrave; disponibile la <a href="http://sus.stat.unipd.it/gallery/gallery.html", target="_blank">photogallery </a> della giornata!
--->
-
-			<!--	<footer>
-					<a href="#two" class="button style2 down">More</a>
-				</footer>
--->
 			</div>
 		</section>
 	
@@ -162,31 +72,20 @@ marketing e delle aziende<br>
 				<header>
 					<h2>Programma</h2>
 				</header>
-				<p>
-				TBA
-				<!--
-<table>
-<tr><td>09.00-09.30  </td><td>Registrazione</td></tr>
-<tr><td>09.30-09.45  </td><td>Benvenuto, saluti ufficiali e inizio lavori</td></tr>
-<tr><td>09.45-10.30 </td><td><i>Survival Data Mining</i></td></tr>
-<tr><td>&nbsp;     </td><td><a href="http://it.linkedin.com/pub/margherita-santoni/1a/412/497/it">Margherita Santoni</a> (Nunatac)</li></td></tr>
-<tr><td>10.30-11.00</td><td>Coffee break</td></tr>
-<tr><td>11.00-11.45</td><td><i>Data science per le applicazioni industriali</i></td></tr>
-<tr><td>&nbsp;     </td><td><a href="http://www.mate.polimi.it/?view=pp&id=85&lg=en#ann">Piercesare Secchi</a> (Politecnico di Milano)</li></td></tr>
-<tr><td>11.45-13.00</td><td>Speed session</td></tr>
-<tr><td>13.00-14.30</td><td>Poster session e pranzo</td></tr>
-<tr><td>14.30-15.30</td><td><i>Bayes and Big Data</i></td></tr>
-<tr><td>&nbsp;     </td><td> <a href="http://www.linkedin.com/pub/steven-scott/4/696/3b6"> Steve Scott</a> (Google Inc.)<br></li></td></tr>
-<tr><td>15.30-16.00</td><td>Poster session e coffee break</td></tr>
-<tr><td>16.00-17.00</td><td>Dialogo "La Statistica nelle Imprese"</td></tr>
-<tr><td>&nbsp;     </td><td><a href="http://www.units.it/persone/index.php/from/abook/persona/8046"> Nicola Torelli</a> (Presidente, Societ&agrave; Italiana di Statistica)</td></tr>
-<tr><td>&nbsp;     </td><td><a href="http://www.linkedin.com/profile/view?id=112482182"> Andrea Tomat</a> (Presidente, Lotto Sport Italia s.p.a.)<br></td></tr>
-<tr><td>&nbsp;     </td><td>Modera<a href="https://homes.stat.unipd.it/tommasodifonzo/content/home"> Tommaso Di Fonzo</a> (Universit&agrave di Padova)<br></td></tr>
-<tr><td>17.00-18.00</td><td>Poster session e aperitivo conclusivo</td></tr>
-<tr><td>19.00-09.00</td><td><a href="http://sus.stat.unipd.it", target="_blank">Stats Under the Stars</a></td></tr>
-</table>
--->
-				</p>
+				<table>
+				<tr><td>9:15 	</td><td>	Benvenuto, saluti ufficiali e inizio lavori </td><tr>
+				<tr><td>09.30-10.15	</td><td> Prima relazione - azienda </td><tr>
+				<tr><td>10:15-11:00</td><td>Seconda relazione - accademia </td><tr>
+				<tr><td>11:00-11:30</td><td>Coffee break </td><tr>
+				<tr><td>11:30-12:15</td><td>Terza relazione - azienda </td><tr>
+				<tr><td>12:15-13:15</td><td>Speed session </td><tr>
+				<tr><td>13:15-14:30</td><td>Pranzo e poster session </td><tr>
+				<tr><td>14:30-15:15</td><td>Quarta relazione - accademia </td><tr>
+				<tr><td>15:15-16:00</td><td>Quinta relazione - azienda </td><tr>
+				<tr><td>16:00-16:30</td><td>Poster session e coffee break </td><tr>
+				<tr><td>16:30-17:30</td><td> "Dialogo"  </td><tr>
+				<tr><td>17:30-18:30</td><td>Poster session e aperitivo conclusivo </td><tr>
+				</table>
 			</div>
 			<a href="index.html#work" class="button style2 down anchored">Next</a>
 		</section>
@@ -245,24 +144,14 @@ proseguire fino al semaforo e svoltare a destra in via Cesare Battisti.
 			<a href="index.html#one" class="button style2 down anchored">Next</a>
 		</section>
 
-
-
                 <section id="one" class="main style2 dark fullscreen">
-                        <div class="box style2 container 80%">
+                        <div class="content box style2 container">
                                 <header>
-                                        <h2><p>Informazioni</p></h2>
+                                        <h2><p>Informazioni e iscrizione</p></h2>
                                 </header>
 <!--<p style="margin: 3em">-->
 <p>Questa giornata vuole essere un momento di incontro e scambio in cui professionisti, esperti delle realt&agrave; aziendali e
 della ricerca possano discutere e trovare possibilit&agrave;  di interazione e collaborazione. <br>
-<br>
-<!--
-Il convegno si accoppia con l'evento <a href="http://sus.stat.unipd.it", target="_blank">Stats under the stars</a> che si svolge la notte tra l'8 e il 9 settembre in Sala Rossini del Caff&egrave; Pedrocchi a Padova.<br>
-Il convegno &egrave; anche una riunione satellite della Conferenza scientifica della Societ&agrave Italiana di Statistica <a href="http://meetings.sis-statistica.org/index.php/ginilegacy/SIS2015", target="_blank"> Statistics and Demography: the Legacy of Corrado Gini</a> (Treviso 9-11/9/2015), ed &egrave; collegato
-anche al <a href="http://www.festivalstatistica.it/", target="_blank">Festival della Statistica</a> (Treviso 11-13/9/2015).<br>
-<a href="brochure_low.png", target="_blank">Pieghevole</a> del convegno.<br>
--->
-<br>
 <strong>Presentazioni dei partecipanti</strong><br>
 I partecipanti sono invitati a presentare un proprio progetto o caso di studio partecipando alla "<strong>speed session</strong>" e alla "<strong>poster session</strong>".
 Una "speed session" raccoglie le presentazioni di massimo 2 minuti, contenenti i punti salienti del progetto presentato. 
@@ -270,20 +159,18 @@ Il "poster" &egrave; un cartellone in cui vengono descritti, con maggior dettagl
 I partecipanti avranno l'occasione di discutere liberamente fra loro dei progetti illustrati nei poster,
 presentando il proprio e raccogliendo informazioni su quelli degli altri. 
 La dimensione consigliata per un poster &egrave; di 100 x 70 cm.  (un template per il poster &egrave; scaricabile <a href="Poster.pptx">qui</a>; un template per le -poche- slides per la speed session &egrave; scaricabile <a href="PresentazioneS4B1.pptx">qui</a>).<br>
+<strong>Iscrizioni</strong><br>
+Per iscriversi: <a href="https://forms.gle/jLqXUk2ASgSdMSVd8">questo link</a>
 <br>
+                        </div>
+
+
+
+
+
+
+
 <!--
-Gli stessi poster potranno essere presentati al <a href="http://www.festivalstatistica.it/">Festival della Statistica di Treviso</a> nella tavola rotonda di Stabato 12 
-Settembre dal titolo "Big Data e Data science: e' qui il nuovo
-petrolio?". -->
-<br><br>
-<!--
-<strong>Partecipanti all'evento</strong><br>
-&Egrave; disponibile una <a href="lista.html",target="_blank"> lista parziale degli iscritti all'evento</a> e che hanno acconsentito alla pubblicazione del loro nome. 
-<strong>Per chi arriva la sera prima </strong><br>
-C'&egrave; la possibilit&agrave; di partecipare ad una cena assieme ai partecipanti al convegno <i>Corrado Gini professor of statistics at Padua University</i>.
-<br>
--->
-</p>
                         </div>
                         <a href="index.html#sponsor" class="button style2 down anchored">Next</a>
                 </section>
@@ -353,20 +240,16 @@ C'&egrave; la possibilit&agrave; di partecipare ad una cena assieme ai partecipa
 
 		<section id="organiz" class="main style2 right dark fullscreen">
 			<div class="content box style2">
-				<header>
 					<h2>Organizzazione</h2>
-				</header>
-				<p>
-				<b>Contatti - Informazioni</b><br>
-				Bruno Scarpa<br> 
-<!--				Universit&agrave; degli Studi di Torino<br>
--->
-				sa@stat.unipd.it<br>
 				<b>Comitato organizzativo</b><br>
 				<a href="https://emanuelealiverti.github.io/", target="_blank">Emanuele Aliverti</a> <br>
 				<a href="https://fradenti.github.io/index", target="_blank">Francesco Denti</a> <br>
 				<a href="http://homes.stat.unipd.it/mariangelaguidolin.html", target="_blank">Mariangela Guidolin</a> <br>
 				<a href="http://homes.stat.unipd.it/brunoscarpa.html", target="_blank">Bruno Scarpa</a><br>
+				<a href="https://www.stat.unipd.it/dipartimento/personale-tecnico-amministrativo", target="_blank">Ilaria Bernardi</a><br>
+				<a href="https://www.stat.unipd.it/dipartimento/personale-tecnico-amministrativo", target="_blank">Elena Guzzonato</a><br>
+				<b>Contatti - Informazioni</b><br>
+				sa@stat.unipd.it<br>
 			</div>
 </section>
 

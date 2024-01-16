@@ -60,7 +60,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none;
 }
 
+
+h3 {
+	font-size: 1.75em;  
+	letter-spacing: -2px; 
+	line-height: 1.25em;
+}
+
 h2 {
+	font-weight: bold;
 	font-size: 2.25em;  
 	letter-spacing: -2px; 
 	line-height: 1.25em;
@@ -739,7 +747,7 @@ body {
 /* Intro                                                                         */
 /*********************************************************************************/
 #intro {
-	background: url('images/overlay.png'), url('../images/intro.jpg');
+	background: url('images/overlay.png'), url('../images/gam.png');
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, bottom center;
@@ -782,14 +790,14 @@ body {
 }
 
 #info {
-	background: url('images/overlay.png'), url('../images/two.jpg');
+	background: url('images/overlay.png'), url('../images/bolle.png');
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, center center;
 }
 
 #programma {
-	background: url('images/overlay.png'), url('../images/one.jpg');
+	background: url('images/overlay.png'), url('../images/italia.png');
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, center center;
@@ -866,7 +874,7 @@ body {
 	height: 3em;
 	line-height: 3em;
 	margin: 0;
-	background: #232A2F;
+	background: #6C757D;
 	color: #999;
 	color: rgba(185,186,187,0.5);
 	overflow: hidden;

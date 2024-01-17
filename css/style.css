@@ -843,13 +843,13 @@ body {
 	background-position: top left, center center;
 }
 
-#where {
+#work {
 }
 
-#where .row.images {
+#work .row.images {
 }
 
-#where .row.images .image {
+#work .row.images .image {
 	position: relative;
 	top: 0;
 	left: 0;
@@ -868,26 +868,26 @@ body {
 	transform: translateZ(0);
 }
 
-#where .row.images.inactive {
+#work .row.images.inactive {
 }
 
-#where .row.images.inactive .image {
+#work .row.images.inactive .image {
 	opacity: 0;
 }
 
-#where .row.images.inactive .image.from-left {
+#work .row.images.inactive .image.from-left {
 	left: -14em;
 }
 
-#where .row.images.inactive .image.from-right {
+#work .row.images.inactive .image.from-right {
 	left: 14em;
 }
 
-#where .row.images.inactive .image.from-top {
+#work .row.images.inactive .image.from-top {
 	top: -7em;
 }
 
-#where .row.images.inactive .image.from-bottom {
+#work .row.images.inactive .image.from-bottom {
 	top: 7em;
 }
 

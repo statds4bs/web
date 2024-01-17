@@ -23,6 +23,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	}
 }
 
+
+
+
+
+
 body {
 	background: #fff;
 }
@@ -44,7 +49,7 @@ body.is-loading *
 body,input,textarea,select {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
-	font-size: 18pt;
+	font-size: 15pt;
 	line-height: 1.75em;
 	color: #39454b;
 	letter-spacing: 0.5px;
@@ -580,6 +585,10 @@ input[type="reset"].style2:hover,
 	transform: translateZ(0);
 }
 
+.main.style2 .content{
+	width: 70%;
+}
+
 .main.style2.left {
 }
 
@@ -591,7 +600,7 @@ input[type="reset"].style2:hover,
 }
 
 .main.style2.right .content {
-	left: 65%;
+	left: 45%;
 }
 
 .main.style2.inactive {
@@ -607,6 +616,30 @@ input[type="reset"].style2:hover,
 .main.style2.inactive.right .content {
 	left: 100%;
 }
+
+
+
+/* mobile a mano */
+@media (max-width: 767px) {
+
+.main.style2.right .content {
+	left: 0%;
+}
+
+.main.style2.left .content {
+	left: none;
+}
+
+.main.style2 .content {
+	width: 100%;
+}
+}
+
+
+
+
+
+
 
 .main.style3 {
 	text-align: center;

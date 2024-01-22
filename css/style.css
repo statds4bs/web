@@ -67,9 +67,15 @@ body,input,textarea,select {
   body {
     font-size: 1rem;
   }
+  /*break the table and use just 1 column*/
+            td {
+                display: block;
+                width: 100%;
+            }
 }
-
-
+td:first-child {
+    text-decoration: underline;
+}
 
 h1,h3,h4,h5,h6 {
 	font-weight: 900;

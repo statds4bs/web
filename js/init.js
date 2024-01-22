@@ -26,8 +26,8 @@
 			'normal': { range: '-1680', href: 'css/style-normal.css', containers: 1200 },
 			'narrow': { range: '-1280', href: 'css/style-narrow.css', containers: 960 },
 			'narrower': { range: '-1000', href: 'css/style-narrower.css', containers: '95%' },
-			'mobile': { range: '-736', href: 'css/style-mobile.css', grid: { gutters: 20 } },
-			'mobile-narrow': { range: '-480', containers: '95%!', grid: { collapse: true } }
+		//	'mobile': { range: '-736', href: 'css/style-mobile.css', grid: { gutters: 20 } },
+		//	'mobile-narrow': { range: '-480', containers: '95%!', grid: { collapse: true } }
 		}
 	});
 	

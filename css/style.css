@@ -12,7 +12,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 /* Basic                                                                         */
 /*********************************************************************************/
 
-
 /* hide elements from mobile;*/
 @media (max-width: 767px) {
 	#nav {
@@ -63,6 +62,14 @@ body,input,textarea,select {
 	color: #39454b;
 	letter-spacing: 0.5px;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+
 
 h1,h3,h4,h5,h6 {
 	font-weight: 900;
@@ -1115,6 +1122,7 @@ body {
 /*********************************************************************************/
 
 body.touch {
+	font-size: 1.25em;
 }
 
 body.touch .main {

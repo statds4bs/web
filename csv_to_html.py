@@ -15,11 +15,13 @@ non_canc = (df["Cancellato"] != "Si")
 df_clean = df[cons & non_canc][['Nome', 'Cognome', 'Azienda']]
 
 df_clean = df_clean.apply(lambda x: x.str.title())
-
 # rimuovi i test
 df_export = df_clean[3:]
 df_export = df_export.drop_duplicates(subset=["Nome", "Cognome"])
 df_export = df_export.sort_values("Cognome")
+
+# rimuovi nan e metti gli altri come vuoti
+df_export = df_export.dropna(subset = ["Nome", "Cognome"]).fillna("-")
 
 with open("partecipanti.html", "r", encoding="utf-8") as file:
      hh = file.read()
